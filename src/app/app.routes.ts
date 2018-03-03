@@ -17,7 +17,7 @@ const appRoutes: Routes = [
         children: [
             { path: 'dashboard', component: DashboardComponent },
             { path: 'progress', component: ProgressComponent },
-            { path: 'graficas1', component: Graficas1Component }
+            { path: 'graficas1', component: Graficas1Component },
             { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
         ]
     },
@@ -26,4 +26,5 @@ const appRoutes: Routes = [
     { path: '**', component: NopagefoundComponent }
 ];
 
+// tslint:disable-next-line:eofline
 export const APP_ROUTERS = RouterModule.forRoot( appRoutes, { useHash: true } );
