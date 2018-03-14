@@ -5,7 +5,10 @@
         <div class="card">
             <div class="card-body">
 
-                <app-graficadona></app-graficadona>
+                <h4 class="card-title">{{ graficos.grafico1.leyenda }}</h4>
+                <app-graficadona [ChartLabels]="graficos.grafico1.labels" [ChartData]="graficos.grafico1.data" [ChartType]="graficos.grafico1.type">
+
+                </app-graficadona>
 
 
             </div>
@@ -15,8 +18,9 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
+                <h4 class="card-title">{{ graficos.grafico2.leyenda }}</h4>
+                <app-graficadona [ChartLabels]="graficos.grafico2.labels" [ChartData]="graficos.grafico2.data" [ChartType]="graficos.grafico2.type"></app-graficadona>
 
-                <app-graficadona></app-graficadona>
 
 
             </div>
@@ -31,8 +35,9 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-
-                <app-graficadona></app-graficadona>
+                <h4 class="card-title">{{ graficos.grafico3.leyenda }}</h4>
+                <app-graficadona [ChartLabels]="graficos.grafico3.labels" [ChartData]="graficos.grafico3.data" [ChartType]="graficos.grafico3.type">
+                </app-graficadona>
 
 
             </div>
@@ -42,9 +47,9 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-
-                <app-graficadona></app-graficadona>
-
+                <h4 class="card-title">{{ graficos.grafico4.leyenda }}</h4>
+                <app-graficadona [ChartLabels]="graficos.grafico4.labels" [ChartData]="graficos.grafico4.data" [ChartType]="graficos.grafico4.type">
+                </app-graficadona>
 
             </div>
         </div>

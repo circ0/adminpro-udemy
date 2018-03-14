@@ -15,9 +15,8 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { PagesComponent } from './pages.component';
 
-// temporal
+// componente temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
-// componentes
 import { GraficadonaComponent } from '../components/graficadona/graficadona.component';
 
 
