@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
 
@@ -15,10 +16,14 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { PagesComponent } from './pages.component';
 
+// Pipes
+import { PipesModule } from '../pipes/pipes.module';
+
 // componente temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficadonaComponent } from '../components/graficadona/graficadona.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule( {
@@ -29,7 +34,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         Graficas1Component,
         IncrementadorComponent,
         GraficadonaComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        ProfileComponent
     ],
     exports: [
         PagesComponent,
@@ -38,10 +44,12 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         Graficas1Component
     ],
     imports: [
+        CommonModule,
         SharedModule,
         PAGES_ROUTES,
         FormsModule,
-        ChartsModule
+        ChartsModule,
+        PipesModule
     ]
 } )
 
