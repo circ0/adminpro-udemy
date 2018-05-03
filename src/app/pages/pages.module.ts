@@ -24,6 +24,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 import { GraficadonaComponent } from '../components/graficadona/graficadona.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule( {
@@ -35,7 +37,9 @@ import { ProfileComponent } from './profile/profile.component';
         IncrementadorComponent,
         GraficadonaComponent,
         AccountSettingsComponent,
-        ProfileComponent
+        ProfileComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     exports: [
         PagesComponent,
