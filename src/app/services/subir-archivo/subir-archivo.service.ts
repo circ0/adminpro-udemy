@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
-import { reject } from 'q';
 import { URL_SERVICIOS } from '../../config/config';
 
 @Injectable()
 export class SubirArchivoService {
 
-  constructor() { }
+  
+  constructor(
+  ) { 
+  }
 
   subirArchivo( archivo: File, tipo: string, id: string ) {
   
@@ -22,7 +24,7 @@ export class SubirArchivoService {
               console.log( 'Imagen subida' );
               resolve( JSON.parse( xhr.response ) );
             } else {
-              console.log( 'Fallo la subida');
+              console.log( 'Fallo la subida', xhr.response);
               reject(xhr.response );
             }
         }

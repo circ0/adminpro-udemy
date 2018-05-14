@@ -8,6 +8,8 @@ import { SettingsService,
           SidebarService,
         SharedService,
         UsuarioService,
+        HospitalService,
+        MedicoService,
       LoginGuardGuard } from './service.index';
 
 @NgModule({
@@ -21,6 +23,8 @@ import { SettingsService,
     SidebarService,
     SharedService,
     UsuarioService,
+    HospitalService,
+    MedicoService,
     LoginGuardGuard,
     ModalUploadService
   ],
