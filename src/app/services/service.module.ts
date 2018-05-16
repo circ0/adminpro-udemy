@@ -10,6 +10,7 @@ import { SettingsService,
         UsuarioService,
         HospitalService,
         MedicoService,
+        AdminGuard,
       LoginGuardGuard } from './service.index';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { SettingsService,
     UsuarioService,
     HospitalService,
     MedicoService,
+    AdminGuard,
     LoginGuardGuard,
     ModalUploadService
   ],
