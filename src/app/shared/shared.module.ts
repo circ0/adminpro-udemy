@@ -10,6 +10,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 
 // Pipes
 import { PipesModule } from '../pipes/pipes.module';
+import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
 
 
 @NgModule({
@@ -22,13 +23,15 @@ import { PipesModule } from '../pipes/pipes.module';
         BreadcrumbComponent,
         HeaderComponent,
         NopagefoundComponent,
-        SidebarComponent
+        SidebarComponent,
+        ModalUploadComponent
     ],
     exports: [
         BreadcrumbComponent,
         HeaderComponent,
         NopagefoundComponent,
-        SidebarComponent
+        SidebarComponent,
+        ModalUploadComponent
     ]
 })
 
